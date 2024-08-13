@@ -1,11 +1,19 @@
-import './App.css';
-import { RouterProvider } from 'react-router-dom';
-import root from './router/root';
+import "./App.css";
+import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-function App(): JSX.Element {
-  return (
-      <RouterProvider router={root}/>
-  );
-}
+const App = () => {
+    return (
+        <>
+            <header></header>
+            <main>
+                <Container>
+                    <Outlet />
+                </Container>
+            </main>
+            <footer></footer>
+        </>
+    );
+};
 
 export default App;
