@@ -18,6 +18,14 @@ const routes: RouteObject[] = [
                     </Suspense>
                 ),
             },
+            {
+                path: "/login",
+                element: (
+                    <Suspense fallback={Loading}>
+                        <Lazy.LoginPage />
+                    </Suspense>
+                ),
+            },
         ],
     },
 ];
