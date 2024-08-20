@@ -1,17 +1,17 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import Header from "./component/layout/Header/Header";
+import Footer from "./component/layout/Footer/Footer";
 
 const App = () => {
     return (
         <>
-            <header></header>
+            <Header />
             <main>
-                <Container>
-                    <Outlet />
-                </Container>
+                <Outlet />
             </main>
-            <footer></footer>
+            <Footer />
         </>
     );
 };
